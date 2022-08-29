@@ -4,6 +4,7 @@ const _ = require('lodash');
 const chokidar = require('chokidar');
 const upath = require('upath');
 const renderAssets = require('./render-assets');
+const renderSitemap = require('./render-sitemap');
 const renderPug = require('./render-pug');
 const renderScripts = require('./render-scripts');
 const renderSCSS = require('./render-scss');
@@ -58,6 +59,10 @@ function _processFile(filePath, watchEvent) {
 
     if (filePath.match(/src\/assets\//)) {
         return renderAssets();
+    }
+
+    if (filePath.match(/src\/sitemap\//)) {
+        return renderSitemap();
     }
 
 }
