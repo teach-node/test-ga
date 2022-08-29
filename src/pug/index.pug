@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(lang='zh-hant')
 
     head
 
@@ -20,26 +20,26 @@ html(lang='en')
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
 
         // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v6.1.0/js/all.js', crossorigin='anonymous')
+        script(defer, src='https://use.fontawesome.com/releases/v6.1.0/js/all.js', crossorigin='anonymous')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', media="none" onload="if(media!=='all')media='all'", crossorigin="anonymous")
+        link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', media="none" onload="if(media!=='all')media='all'", crossorigin="anonymous")
 
         // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+        link(href='css/styles.css',  rel="stylesheet", crossorigin="anonymous")
 
-        script(async, src="https://www.googletagmanager.com/gtag/js?id=G-6FDQDC6DYG")
+        script(defer, src="https://www.googletagmanager.com/gtag/js?id=G-6FDQDC6DYG")
         
-        script.
+        script(defer).
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-6FDQDC6DYG');
 
-        script(async, src="https://www.googletagmanager.com/gtag/js?id=UA-237880852-1")
+        script(defer, src="https://www.googletagmanager.com/gtag/js?id=UA-237880852-1")
 
-        script.
+        script(defer).
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -65,7 +65,7 @@ html(lang='en')
         header.masthead.bg-primary.text-white.text-center
             .container.d-flex.align-items-center.flex-column
                 // Masthead Avatar Image
-                img.masthead-avatar.mb-6(src='assets/img/avataaars.jpg', alt='...')
+                img.masthead-avatar.mb-6(src='assets/img/avataaars.webp', alt='...')
                 // Masthead Heading
                 br
                 br
@@ -98,42 +98,42 @@ html(lang='en')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/product/coaster.jpg', alt='...')
+                            img.img-fluid(src='assets/img/product/coaster.webp', alt='...')
                     // Portfolio Item 2
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/product/frameless.jpg', alt='...')
+                            img.img-fluid(src='assets/img/product/frameless.webp', alt='...')
                     // Portfolio Item 3
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/product/photo-frame.jpg', alt='...')
+                            img.img-fluid(src='assets/img/product/photo-frame.webp', alt='...')
                     // Portfolio Item 4
                     .col-md-6.col-lg-4.mb-5.mb-lg-0
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/product/canvas-bag.jpg', alt='...')
+                            img.img-fluid(src='assets/img/product/canvas-bag.webp', alt='...')
                     // Portfolio Item 5
                     .col-md-6.col-lg-4.mb-5.mb-md-0
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/product/acrylic.jpg', alt='...')
+                            img.img-fluid(src='assets/img/product/acrylic.webp', alt='...')
                     // Portfolio Item 6
                     .col-md-6.col-lg-4
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/product/creation.jpg', alt='...')
+                            img.img-fluid(src='assets/img/product/creation.webp', alt='...')
 
         // About Section
         section#about.page-section.bg-primary.text-white.mb-0
